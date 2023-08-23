@@ -1,10 +1,14 @@
+"use client"
+
+import { Modal } from "@/components/ui/modal";
 import { UserButton } from "@clerk/nextjs";
 
 const SetupPage = () => {
   return (
     <div>
-      This is a protected route!
-      <UserButton afterSignOutUrl="/" />
+      <Modal isOpen onClose={() => { }} title="test" description="description">
+        Children
+      </Modal>
     </div>
   )
 }
